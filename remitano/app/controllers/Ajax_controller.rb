@@ -1,8 +1,4 @@
 class AjaxController < ApplicationController
-
-	def testajax
-		
-	end
 	def vocieup
 		if session[:userid].to_i!=0
 			iduser=session[:userid].to_i

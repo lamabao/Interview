@@ -19,7 +19,7 @@
                          datacheck=Countlike.checkcountuser(iduser,item.id)
                         if datacheck.length==0 %>
                           <i  style="cursor: pointer;" onclick="Remitano.vocieup(<%=item.id%>)" class="glyphicon glyphicon-thumbs-up"></i> 
-                         <i style="cursor: pointer;"> onclick="Remitano.vociedown(<%=item.id%>)" class="glyphicon glyphicon-thumbs-down"></i><span>(un-voted)</span>
+                         <i style="cursor: pointer;" onclick="Remitano.vociedown(<%=item.id%>)" class="glyphicon glyphicon-thumbs-down"></i><span>(un-voted)</span>
                          <%else
                         
                             if datacheck[0].numberlike.to_i==1 %>

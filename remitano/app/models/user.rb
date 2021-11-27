@@ -16,4 +16,8 @@ class User < ApplicationRecord
   		datauser=User.find_by(id: id)
   		return datauser
   end
+  REGEX_PATTERN = /^(.+)@(.+)$/
+  def self.is_email_valid? email
+      email =~REGEX_PATTERN
+  end
 end
